@@ -1,0 +1,34 @@
+ <div class="card" style="width:300px">      ---Card1
+ <div class="card-body bg-light">
+    <img src="card.jpg"class="card-img-top"
+    width="300px">
+    <h4 class="card-title">Sanjay</h4>
+    <h5 class="card-subtitle">Developer</h5>
+    <p class="card-text">He is punctual to office!</p>
+  </div>
+</div>
+
+
+ <div class="card" style="width:300px">   ---card2
+   <div class="card-body bg-light">
+      <img src="card.jpg"class="card-img-top"
+      width="300px">
+      <h4 class="card-title">Vijay</h4>
+      <h5 class="card-subtitle">Tester</h5>
+      <p class="card-text">He is addicted to coffee</p>
+    </div>
+ </div>
+
+
+ <div class="card"style="width:300px">   card--3
+    <div class="card-body bg-light">
+        <img src="card.jpg"class="card-img-top"
+        width="300px">
+        <h4 class="card-title">Ashish</h4>
+        <h5 class="card-subtitle">Programmer</h5>
+        <p class="card-text">He is a good employee. He is a friendly guy</p>
+      </div>
+   </div>
+
+Place all the above single card structures in a div tag to display side by side, whole above content when placed in div with class card-group displays all
+cards side by side.

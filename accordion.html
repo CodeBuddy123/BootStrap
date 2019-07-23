@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accordion</title>
+  <link href="bootstrap.css" rel="stylesheet">
+  <script src="jquery-3.3.1.js"></script>
+  <script src="popper.js"></script>
+  <script src="bootstrap.js"></script>
+  <style>
+    body
+    {
+      font-size: 24px;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+   <div id="accordion">
+
+    <div class="card">
+      <div class="card-header">
+        <a href="#c1" data-toggle="collapse">India</a>
+        </div>
+        <div class="collapse show" id="c1" data-parent="#accordion">
+         <div class="card-body">
+           
+            India is a vast South Asian country with diverse terrain – from Himalayan peaks to Indian Ocean coastline – and history reaching back 5 millennia. In the north, Mughal Empire landmarks include Delhi’s Red Fort complex and massive Jama Masjid mosque, plus Agra’s iconic Taj Mahal mausoleum. Pilgrims bathe in the Ganges in Varanasi, and Rishikesh is a yoga centre and base for Himalayan trekking.
+    </div>
+   </div>
+  </div>
+  <div class="card">
+      <div class="card-header">
+        <a href="#c2" data-toggle="collapse">USA</a>
+        </div>
+        <div class="collapse" id="c2" data-parent="#accordion">
+         <div class="card-body">
+            The U.S. is a country of 50 states covering a vast swath of North America, with Alaska in the northwest and Hawaii extending the nation’s presence into the Pacific Ocean. Major Atlantic Coast cities are New York, a global finance and culture center, and capital Washington, DC. Midwestern metropolis Chicago is known for influential architecture and on the west coast, Los Angeles' Hollywood is famed for filmmaking.
+          </div>
+        </div>
+       </div>
+
+       <div class="card">
+          <div class="card-header">
+            <a href="#c3" data-toggle="collapse">UK</a>
+            </div>
+            <div class="collapse" id="c3" data-parent="#accordion">
+             <div class="card-body">
+                The United Kingdom, made up of England, Scotland, Wales and Northern Ireland, is an island nation in northwestern Europe. England – birthplace of Shakespeare and The Beatles – is home to the capital, London, a globally influential centre of finance and culture. England is also site of Neolithic Stonehenge, Bath’s Roman spa and centuries-old universities at Oxford and Cambridge.
+              </div>
+            </div>
+           </div> 
+</body>
+</html>

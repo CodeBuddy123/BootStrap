@@ -1,0 +1,328 @@
+Bootstrap=framework based on Jquery ,popper and Javascript
+Jquery and Popper are Libraries and Javascript is language.
+Bootstrap uses CSS and above libraries internally.
+--------------------------------------------------------------------------
+ <meta name="viewport" content="width=device-width">
+The above line is written for RWD
+------------------------------------------------------
+ <meta charset="utf-8">
+The above line mentions the web browser that page is in unicode format
+-----------------------------------------------------------
+ <link href="bootstrap.css" rel="stylesheet">
+Loads css of bootstrap
+<script src="jquery-3.3.1.js"></script>
+Loads jquery
+<script src="popper.js"></script>
+Loads popper
+<script src="bootstrap.js"></script>
+Loads bootstrap javascript file
+---------------------------------------------------------------------
+.contain fluid acts as outercontainer without magin
+occupies full page width
+..container acts as outer container with margin,wih 
+centered with left and right margins.
+==========================================
+Text colors:-
+<p class="text-primary">Some paragraph</p>
+.text-primary:BLUE
+.text-success:GREEN
+.text-info:
+.text-warning:ORANGE
+.text-danger:RED
+.text-muted:GRAY
+.text-secondary:LIGHTGRAY
+.text-light:WHITE
+===========================
+BACKGROUND COLORS
+----------------------------------------
+.bg-primary:BLUE
+.bg-success:GREEN
+.bgt-info:light blue
+.bg-warning:ORANGE
+.bg-danger:RED
+.bg-muted:GRAY
+.bg-secondary:LIGHTGRAY
+.bg-light:WHITE
+.bg-dark:black
+================================
+Headings
+display-1 to display-4
+syntax:- <h1 class="display-1">Heading</h1>
+display-1 to display-4 headings are available
+font size increases with no bold when compared to normal html h1 to h6tags
+------------------------------------------------------------------------------
+text-left, text-right, text-center,text-justify alignments
+---------------------------------------------------------------------------
+Font Styles
+.font-weight-bold
+.font-weight-light
+.font-italic
+.text-lowercase
+.text-uppercase
+.text-capitalize
+------------------------------------------------------------------------------
+lead:-larger font size,larger line height
+.lead
+----------------------------------------------------------------------------------
+visibility
+.visible(shws content) and .invisible for hiding content
+--------------------------------------------------------------------------------
+A webpage may contain any no of grids.
+A grid contains 12columns.
+A div can occupy min 1 to max 12 columns.
+<div class="row">
+   <div class="col-n">......</div>
+    <div class ="col-n">....</div>
+   ......
+</div>    here n can be any integer value for div to occupy columns
+if we dont mention no of columns it will divide based on no of divs
+cols taken by each div=12/no of divs
+============================================================
+Media Queries:-Applying CSS Styles based on Device's width
+@media (min-width: 320px) and (maxwidth:575px) 
+{
+   styles here
+} >> predefined in css of bootstrap file
+-------------------------------------------------------------------------------------------------------
+RWD:- Displaying the content of webpage as per device width
+<div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-primary">Div1</div>
+sample syntax.  sm for small device,md medium device,lg-large,xl-extralarge
+---------------------------------------------------------------------------------------------------
+.jumbotron--used to display content in larger size
+------------------------------------------------------------------------------------------------
+Image-Shapes:-
+.rounded=little bit rounded edges-can be used to any div
+.rounded-circle=circle -shaped can be used to any div tag
+.img-thumbnail=surrounding border will be displayed used for image only
+--------------------------------------------------------------------------------------------------
+Alignment-
+.float-left --->left alignment
+.float-right:--->right alignment
+.mx-auto:---->center alignment
+.d-block-------->shud be added along with auto if not blcklevel tag ex image
+.img-fluid---->reduce image size when browser width is reduced extremely.
+==================================================================
+Table Creation:-
+.table---->makes table good looking
+.table-bordered --->table with border
+.table-borderless--->table without border
+.table-striped--->table with stripes for rows
+ <thead>--->represents normal header <tr>tags(with <th>tags inside)
+<tbody>--->represents normal <tr>tags(with <tr>tags inside)
+.table-hover--->highlights the row when user places mouse pointer  on row
+.table-condensed--->makes the table with less padding and condense
+-----------------------------
+Table Colors:-
+.table-primary=Blue
+.table-seconday=Gray
+.table-success=Green
+.table-danger=Red
+.table-info=Light blue
+.table-warning=orange
+.table-active=light gray
+.table-dark=black
+.table-white=white
+---------------------------
+.table-responsive>--->applies scrollbar for table if width of browser is reduced
+use it as class by placing the whole table content in div tag
+<div class="table-responsive>
+  whole content of table
+</div>
+=================================================================
+Alerts :-
+.alert--->Creates alert box
+.alert.primary--->blue color is applied(similary u can use other colors)
+.fade----------->fade effect while closing
+.show----------->style for close button
+data-dismiss="alert" -------->closes the alert window when "x" is clicked
+   &times;  --------->shows close button(X)
+
+Example:-
+<div class="alert alert-primary fade show">
+    Welcome to the website
+    <button class="close" data-dismiss="alert">&times;</button>
+  </div>
+=================================================================
+Buttons:-
+.btn---->bootstrap style of button
+.btn-primary------->button with primary color and background of same color
+similary other colors of bootstrap
+.btn-outline-success---> on hover, button background is visible
+                                           but appears with just outline till u hover
+Sizes:
+.btn-sm ----------->Small size button
+.btn-lg-------------->large size button
+.btn-block------------>full size button occupies full width of page
+By default, if u dont mention the size is larger than sm and smaller than lg.
+
+Group:-
+<div class="btn-group"> or button-group-vertical(disp btn vert with no gap)
+     <button> button1</button>
+     <button>button2</button>
+</div>          ----------------->Horizontally buttons are displayed with no gap
+================================================================
+Drop down:-
+.dropdown-toggle---------->Displays dropdown symbol V
+.dropdown-toggle-split---------->Applies styles for dropdown button
+data-toggle="dropdown"   -------->shows dropdown menu when user clicks V
+.caret    ------------>style for dropdown symbol
+.dropdown-menu---------------->container for dropdown menu
+.dropdown-item------------------->item in dropdown menu
+=================================================================
+Badges:- used to display small content.
+for example msg count in messages button
+.badge ----------->DisplaysBadge 
+.badge-pill-----------> pill badges(more rounded corners)
+.badge-primary--->blue badge
+<span class="badge badge-primary">1</span>
+Note:- use the badge class in span tag
+====================================================================
+Progress:-
+.progress--------------->displays progress bar.
+.progress-bar------------>progress of task in bar
+.mx-auto-------------------->displays progress bar in center
+.progress-bar-striped--------->displays striped lines
+.progress-bar-animated--------->animates the striped lines in the progress
+
+Note:-take two div tags, one outer div for the bar and the inner div for progress.
+====================================================================
+Pagination:-
+.pagination---------->represents page no groups(default left pagination)
+.page-item------------>single page number
+.page-link--------------->hyperlink in the page number
+.pagination-lg----------->large size pagination
+.pagination-sm----------->small size pagination
+.justify-content-center---->centered pagination
+.justify-content-end------------------->right aligned pagination
+Note: use the above things in ul and li tags
+pagination,pagination-lg,pagination-sm,justify-content-center,justify-content-end should be used as class in outer ul tag
+page-item shud be used as class in li tag
+page-link shud be used as class in anchor tag
+==============================================================
+Bread crumb:-
+used to display the path of webpages
+-------------------------------------------------------
+.breadcrumb ------>creates bread crumb(use it in outerdiv)
+.breadcrumb:item------>represents single item(use in li tag with 'a' tag inside)
+.active---->represents the current working page(use in the li tag of current page)
+===================================================================
+List Groups:-
+.list-group--->represents list group,displays items line by line
+.list-group-item--------->represents single item, shows item with borders
+.list-group-flush---------->removes surrounding borders,keeps seperater lines
+.list-group-item-action----->highlights the item,on hover
+.list-group-item-primary------>use primary color in list group(similarly other color
+Note:- group and group flush are used in outer div,others used in 'a' tag
+=================================================================
+Cards
+.card------------->respresents card
+.card-header--------->used for card header
+.card-content---------->used for card content
+.card-footer---------->used for card footer
+.card-group---------------->Group of cards
+.card-img-bottom-------->Displays image at bottom
+.card-img-top-------------->Displays image at top
+.mx-auto--------------------->Horizontally center
+.card-title-------------------->Main title of card
+.card-subtitle---------------->Subtitle of card
+.card-text--------------------->Plain text of card
+================================================================
+ Collapsible:-
+.collapsible------------>used to create collapsible/expand content
+data-toggle="collapsible"------->used to expand/collapse the content on click
+data-target="#id"------------>used to create connection btwn content and button
+href="#id"--------------------->used to connect if hyperlink is used instead of button
+==================================================================
+Accordion:- used to display one content among few
+Accordion= cards+collapsible
+id="accordion"------------->to set id for accordion box(container)
+show--------------------------->Displays the content by default
+data-parent="#accordion"------>to set reference to parent(Container)
+
+===============================================================
+Forms:-
+Stacked form- line by line appearance, label and box
+.form-group----------->group of label and form control
+.form-control----------->represents form control(textbox,checkbox etc)
+.form-check-label------->represents label for checkbox/radio button
+.form-check.input-------->represents input tag of checkbox/radio button
+.form-control-file---------->style for input type="file">
+
+Inline form:-
+Used to create form with side by side elements
+Ideal for forms with lesser elements, especially login page(login id and pw)
+.form-inline---->used to create inline form
+.mr-n ------------------>where n can be inpx, it provides gap between text and box
+the above one used in label tag along with "for=".."
+used in div tag as a class along with form-group
+
+Input group form:-
+.input-group--------->used to create input group form
+.mb-2-------------------->gives 2 px margin gap at bottom
+.input-group-prepend--->used in span tag
+==================================================================
+Navigation:-
+.nav------->represents navigation menu
+.nav-item---------->represents an item in nav menu
+.nav-link------------>represents hyperlink in nav item
+.nav-bar------------->represents nav bar
+.bg-light-------------->makes the background light color
+.fixed-top------------>shows navbar at top
+.navbar-expand-sm--------->nav bar will be expaned in  sm devices andup
+.navbar-brand------------------->website name or logo
+.navbar-toggler------------------->button for expanding menu(extra sm)
+data-toggle="collapse":-------->expands menu when button is clicked
+data-target="#menuid"---------->connects menu and expand button
+.navbar-toggle-icon----------------->icon for expand button
+.navbar-nav----------------------------->menu for nav bar
+.dropdown-toggle--------------------->menu item with dropdown symbol
+data-toggle="dropdown"------------>expands dropdown menu when
+dropdown-menu------------------------->represents dropdown menu item clicked
+dropdown-item--------------------------->represents item in dropdown menu
+===================================================================
+Carousel:- used to display image slideshow along with content
+.carousel--------->represents a carousel
+.slide--------------->shows slides with "slide" effect
+data-ride="carousel---------->Starts carousel automatically after page opened
+data-interval="millisec"-------->Specifies  time gap between each slide
+.carousel-indicators---------------->containers for indicators of slide at bottom
+data-target="#id"--------------------->connects the indicator with carousel
+.carousel-inner------------------------->container for slides
+.carousel-item-------------------------->represents single slide
+.active--------------------------------------->represents current slide
+.carousel-caption------------------------->Displays text content top of image
+.carousel-control-prev------------------->sets position for prev button
+.carousel-control-prev-icon-------------->icon for prev button
+.data-slide="prev"--------------------------->shows prev slide when button is clicked
+.carousel-control-next------------------->sets position for next button
+.carousel-control-next-icon-------------->icon for next button
+.data-slide="next"--------------------------->shows next slide when button is clicked
+==================================================================
+Modal Popup boxes:-used to display some content as a popup box in webpage
+.modal-------------->creates a modal box
+.modal-dialog---------->created a modal dialog box
+.modal-content--------->creates content inside modal box
+.modal-header----------->header of dialogbox
+.modal-footer------------->footer of dialogbox
+.modal-body--------------->body of dialogbox
+data-toggle="modal"------>opens dialogbox when button clicked
+data-target="#id"----------->connects button with dialogbox
+.modal-sm---------------------->small-size modal box(by default medium)
+.modal-lg------------------------>large-size modal box
+.close------------------------------->style for close button
+.modal-dialog-centered-----------> displays modal box vertically centered
+================================================================
+ToolTip:It is used to display name/details about an image/button/anyelement
+when the user places mouse pointer on it
+data-toggle="tooltip"----------->enables bootstrap tooltip
+data-placement="left/right/top/bottom"--->specifies position of tooltip
+title="text"------------------>tooltip text
+$("[data-toggle='tooltip']").tooltip();------->enables tooltip in script
+Note:- Use the above one in script tag
+===================================================================
+
+
+
+
+
+

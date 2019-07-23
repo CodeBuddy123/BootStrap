@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Form</title>
+  <link href="bootstrap.css" rel="stylesheet">
+  <script src="jquery-3.3.1.js"></script>
+  <script src="popper.js"></script>
+  <script src="bootstrap.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+  <form>
+    <div class="form-row">
+      <div class="form-group col-sm-6">
+          <label for="textEmail">Email:</label>
+          <input type="email"class="form-control"
+          placeholder="Email" id="textEmail">
+        </div>
+        <div class="form-group col-sm6">
+            <label for="textPassword">Password:</label>
+            <input type="password"class="form-control"
+            placeholder="Password"id="textPassword">
+           </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-sm-4">
+              <label for="textStreet">Street</label>
+              <input type="text" class="form-control"
+              placeholder="Street"id="textStreet">
+            </div>
+                  <div class="form-group col-sm-4">
+                    <label for="textCity">City</label>
+                    <input type="text" class="form-control"
+                    placeholder="City"id="textCity">
+          </div>
+          <div class="form-group col-sm-4">
+              <label for="drpcountry">Country:</label>
+              <select id="drpcountry" class="form-control">
+                <option>Country</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>Germany</option>
+                <option>Pakistan</option>
+                </select>
+          </div>
+       </div>
+          <div class="form-row">
+            <div class="form-group col-sm-12">
+              <label for="textComments">Comments:</label>
+              <textarea  class="form-control"
+              placeholder="Comments"
+              id="textComments"></textarea>
+            </div>
+          </div>
+      <button class=" btn btn-danger btn-lg">
+        Register
+              </button>
+            </form>
+       </div>       
+        </body>
+      </html>
+    
+      
